@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
+var watch = require('gulp-watch');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
@@ -20,6 +21,11 @@ gulp.task('style', function(){
 	.pipe(gulp.dest('dist/css/'));
 });
 
+gulp.task('watch', function(){
+	gulp.watch('assets/sass/*.scss', ['style']);
+	gulp.watch('assets/js/*js', ['script']);
+})
+
 gulp.task('webserver', function(){
 	gulp.src('../eightphoto/')
 	.pipe(webserver({
@@ -30,4 +36,4 @@ gulp.task('webserver', function(){
 		port: 8001
 	}));
 });
-gulp.task('default', ['script','style', 'webserver']);
+gulp.task('default', ['script','style', 'webserver', 'watch']);

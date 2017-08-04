@@ -1,3 +1,5 @@
+/*nav*/
+
 *{
 	padding:0;
 	margin:0;
@@ -8,7 +10,7 @@
 	margin-left:auto;
 	background:#000;
 	clear:both;
-	height:60px;
+	height:70px;
 	line-height:50px
 }
 
@@ -16,7 +18,101 @@
 	background-image:url('../img/m129ctbxq65v0ce1e1k911.jpg');
 	background-repeat:no-repeat;
 	background-size: cover;
-	width:40px;
-	height:40px;
-	padding-left:20px;
+	width:50px;
+	height:50px;
+	cursor:pointer;
+}
+
+#titulo-nav{
+	color:white;
+	font-size:13px;
+	cursor:pointer;
+}
+
+.fa-desktop{
+	color:white;
+	cursor:pointer;
+}
+
+.fa-window-maximize{
+	color:white;
+	cursor:pointer;
+}
+
+.fa-mobile{
+	color:white;
+	cursor:pointer;
+}
+
+.btn-default{
+	color:white;
+	background-color:#2b97c7;
+	border:none;
+	font-weight:bold;
+
+}
+
+/*seccion dos*/
+#dos{
+	height:340px;
+}
+
+#titulo-about{
+	font-family: 'Pompiere', cursive;
+	padding-top:30px;
+}
+
+#parrafo-dos{
+	text-align:center;
+	text-align:justify;
+	padding-top:50px;
+	font-size:14px;
+}
+
+/*seccion tres*/
+
+#tres{
+	background: #f4f4f4;
+	height: 1000px;
+}
+
+#titulo-services{
+	font-family: 'Pompiere', cursive;
+	padding-top:50px;
+}
+.hr-uno{
+	text-align:center;
+	width:4%;
+	border: 1px solid #000;
+	margin-left: 48%;
+	margin-top:1%;
+}
+
+.hr-dos{
+	text-align:center;
+	width:2%;
+	border: 1px solid #000;
+	margin-left: 49%;
+	margin-top:-1%;
+}
+
+.imagen-uno{
+	background-image:url('../img/service-1-640x790.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:450px;
+}
+
+.imagen-dos{
+	background-image:url('../img/service-3-640x790.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:450px;
+}
+
+.imagen-tres{
+	background-image:url('../img/service-2-640x790.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:450px;
 }
