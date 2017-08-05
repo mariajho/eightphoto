@@ -1,56 +1,66 @@
-/*nav*/
-
 *{
 	padding:0;
 	margin:0;
 }
 
-#menu{width:100%;
-	text-align:center;
-	margin-left:auto;
-	background:#000;
-	clear:both;
-	height:70px;
-	line-height:50px
-}
+/*nav*/
+.navbar-uno{
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	top: 0;
 
-#logo{
-	background-image:url('../img/m129ctbxq65v0ce1e1k911.jpg');
-	background-repeat:no-repeat;
+}
+.logo{
+	background-image: url('../img/m129ctbxq65v0ce1e1k911.jpg');
+	text-decoration: none;
+	background-repeat: no-repeat;
 	background-size: cover;
-	width:50px;
-	height:50px;
+	width:40px;
+	height: 40px;
+	padding: 30px;
+	margin-left: 26px;
+	padding-top:2%;
 	cursor:pointer;
 }
 
-#titulo-nav{
+#eightphoto{
 	color:white;
-	font-size:13px;
-	cursor:pointer;
 }
 
-.fa-desktop{
-	color:white;
-	cursor:pointer;
+
+/*carousel*/
+.carousel-uno-img{
+	background-image:url('../img/banner1.jpg');
 }
 
-.fa-window-maximize{
-	color:white;
-	cursor:pointer;
+.segnavbar{ 
+	background-color: white;
+	height: 100px;
+	margin-top: 50px;
+	.photo{
+		font-family: 'Oswald', sans-serif;
+		margin-left: 50px;
+		.eig{
+			color: green;
+		}
+		.wp{
+			color: black;
+		}
+	}
 }
 
-.fa-mobile{
-	color:white;
-	cursor:pointer;
+/*slider*/
+
+.myCarousel{
+	width: 100%;
+	height: 500px;
+	
 }
 
-.btn-default{
-	color:white;
-	background-color:#2b97c7;
-	border:none;
-	font-weight:bold;
 
-}
 
 /*seccion dos*/
 #dos{
@@ -73,7 +83,7 @@
 
 #tres{
 	background: #f4f4f4;
-	height: 800px;
+	height: 750px;
 }
 
 #titulo-services{
@@ -103,7 +113,7 @@
 	background-size: cover;
 	background-repeat:no-repeat;
 	height:450px;
-	margin-top:30px;
+	margin-top:50px;
 }
 
 .imagen-dos{
@@ -111,7 +121,7 @@
 	background-size: cover;
 	background-repeat:no-repeat;
 	height:450px;
-	margin-top:30px;
+	margin-top:50px;
 }
 
 .imagen-tres{
@@ -119,4 +129,63 @@
 	background-size: cover;
 	background-repeat:no-repeat;
 	height:450px;
+	margin-top:50px;
 }
+
+
+/*seccion cuatro*/
+
+#cuatro{
+	background-image:url('../img/stat-bg.jpg');
+	height:400px;
+}
+
+.fa{
+	color:white;
+	padding-top:60px;	
+}
+
+.titulo-iconos{
+	color:white;
+	font-family: 'Pompiere', cursive;
+}
+
+#hexagono { 
+   width: 100px; 
+   height: 55px; 
+   background: #162f4e; 
+   position: relative; 
+   margin-top:20%;
+   margin-left: 33%;
+} 
+
+#hexagono:before { 
+   width: 0; 
+   height: 0; 
+   content: ""; 
+   position: absolute; 
+   top: -25px; 
+   left: 0; 
+   border-left: 50px solid transparent; 
+   border-right: 50px solid transparent; 
+   border-bottom: 25px solid #162f4e;
+} 
+
+#hexagono:after { 
+   width: 0; 
+   height: 0; 
+   content: ""; 
+   position: absolute; 
+   bottom: -25px; 
+   left: 0; 
+   border-left: 50px solid transparent; 
+   border-right: 50px solid transparent; 
+   border-top: 25px solid #162f4e;
+}
+
+
+
+
+
+
+
